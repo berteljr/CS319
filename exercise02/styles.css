@@ -1,0 +1,9 @@
+th{background-color: blue;
+    color:floralwhite
+
+}
+
+tr:nth-child(even){
+    background-color: firebrick;
+    color:beige
+}
