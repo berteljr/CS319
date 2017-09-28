@@ -4,10 +4,22 @@
         <meta charset="utf-8">
     </head>
     <body>
-    <form>
-        <p>First Name: <input type="text" name="firstname"></p>
+        <script>
+            function showValues() {
+                var firstName;
+                var iceCream;
+                var clothing;
+                
+                firstName = document.getElementById("fn").value;
+                alert(firstName);
+                iceCream = document.getElementById("ic").value;
+                alert(iceCream);
+            }
+        </script>
+    <form name="story" id="story" action="#" method="get">
+        <p>First Name: <input type="text" name="firstName" id="fn"></p>
         <p>Favorite Flavor of Ice Cream</p>
-        <select name="flavorsoficecream">
+        <select name="iceCream" id="ic">
             <option value="chocolate">Chocolate</option>
             <option value="vanilla">Vanilla</option>
             <option value="strawberry">Strawberry</option>
