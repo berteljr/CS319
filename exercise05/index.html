@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise: 05</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function tellMonth(){
+                
+                var montha = document.month.monthNumber.value;
+                
+                montha = montha.trim();
+                
+                if (montha == 1)    {
+                    alert("January");
+                    return true;
+                } else if (montha == 2) {
+                    alert("February")
+                    return true;
+                } else if (montha == 3) {
+                    alert("March")
+                    return true;
+                } else if (montha == 4) {
+                    alert("April")
+                    return true;
+                } else if (montha == 5) {
+                    alert("May")
+                    return true;
+                } else if (montha == 6) {
+                    alert("June")
+                    return true;
+                } else if (montha == 7) {
+                    alert("July")
+                    return true;
+                } else if (montha == 8) {
+                    alert("August")
+                    return true;
+                } else if (montha == 9) {
+                    alert("September")
+                    return true;
+                } else if (montha == 10) {
+                    alert("October")
+                    return true;
+                } else if (montha == 11) {
+                    alert("Nvember")
+                    return true;
+                } else if (montha == 12) {
+                    alert("December")
+                    return true;
+                } else  {
+                    alert("Not a month")
+                    return true;
+                }
+                
+            }
+        </script>
+        <h1>Months</h1>
+        <form name="month" action="#" method="get">
+            <p>Month Number:<input type="number" id="monthNumber" name="monthNumber" value=""></p>
+            <p><input type="submit" id="subNum" name="subNum" value="Submit" onclick="tellMonth();"></p>
+        </form>
+    </body>
+</html>
