@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz 06 | Index</title>
+        <meta charset="utf-8">
+            <script>
+            function favoriteColor() {
+                var color;
+                
+                color = document.frmColor.favColor.value;
+
+                if (color == "")    {
+                    alert("Incomplete")
+                    return false;
+                } else {
+                    return true;
+            }
+        }
+        </script>
+    </head>
+    <body>
+    <form name="frmColor" id="color" value="favColor" action="#" method="get" onsubmit="favoriteColor">
+        <p>Favorite Color: <input type="text" name="favColor" id="c"></p>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+    <hr />
+    </body>
+</html>
