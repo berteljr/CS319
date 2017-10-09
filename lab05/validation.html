@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unit 05 Lab | Validation</title>
+        <meta charset="utf-8">
+        <script>
+            function formValidate() {
+                var firstName;
+                var lastName;
+                var emailAddress;
+                
+                firstName = document.namevalidate.firstname.value;
+                lastName = document.namevalidate.lastname.value;
+                emailAddress = document.namevalidate.emailaddress.value;
+                
+                if (firstName == "")    {
+                    alert("Incomplete")
+                    return false;
+                } else {
+                    return true;
+                }
+                
+                 if (lastName == "")    {
+                    alert("Incomplete")
+                    return false;
+                } else {
+                    return true;
+                }
+                
+                 if (emailAddress == "")    {
+                    alert("Incomplete")
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+    <form action="#" name="namevalidate" id="nv" method="get" onsubmit="formValidate();">
+        <p>First Name: <input type="text" name="firstname" id="fn"></p>
+        <p>Last Name: <input type="text" name="lastname" id="ln"></p>
+        <p>Email Address: <input type="text" name="emailaddress" id="ea"></p>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+    <hr />
+    </body>
+</html>
