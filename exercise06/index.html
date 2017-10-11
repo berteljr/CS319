@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unit 6 Exercise</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function validate() {
+                //alert("test")
+                var num_Guess = document.getElementById("numGuess");
+                
+                if (num_Guess.value == "") {
+                    alert("You gotta put a number in there, silly!");
+                    num_Guess.focus();
+                    return false;
+                } else if (isNaN(num_Guess.value) == true) {
+                    alert("You have to put a number in the box, not letters, stupid!");
+                    num_Guess.select();
+                    return false;
+                } else if (num_Guess.value == <1 || numGuess.value > 10) {
+                    alert("The number must be between 1 and 10");
+                    num_Guess.select();
+                    return false;
+                } else if (num_Guess.value == <3) {
+                    alert("The number you guessed is incorrect. Guess higher!");
+                    num_Guess.select();
+                    return false;    
+                } else if (num_Guess.value == >3) {
+                    alert("The number you guessed is incorrect. Guess lower!");
+                    num_Guess.select();
+                    return false;
+                } else {
+                    alert("That was the correct number!!");
+                    return true;
+                }
+            }
+        </script>
+        <form name="unit6" id="unit6" action="https://www.mattsias.com/echo.php" method="get" onsubmit="return validate();">
+            <p>Guess the Number: <input type="text" name="numGuess" id="numGuess"></p>
+            <p><input type="submit" name="submit" id="submit" value="Submit"></p>
+        </form>
+    </body>
+</html>
