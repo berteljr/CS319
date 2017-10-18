@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Midterm Program 3</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function validateAge() {
+        var age = document.checkAge.age.value;
+        
+        age = document.checkAge.age.value;
+        
+        if (age == "") {
+          alert("Ya gotta put something in the box!");
+          document.checkAge.age.focus();
+          return false;
+        } else {
+          return true;
+        }
+        
+      }
+        </script>
+        <form name="checkAge" id="checkAge" action="#" method="get" onsubmit="validateAge();">
+            <p>How old are you?<br>
+            <input type="text" name="age" id="age"></p>
+            <p><input type="submit" name="submit=" id="submit" value="Submit"></p>
+        </form>
+    </body>
+</html>
